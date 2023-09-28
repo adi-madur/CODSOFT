@@ -1,0 +1,138 @@
+.about {
+    gap: 1.5rem;
+}
+
+.aboutContent {
+    gap: 1.5rem;
+}
+
+.aboutTitle {
+    font-size: var(--size-3xl);
+    color: var(--cle-light);
+}
+
+.aboutDescription {
+    font-size: var(--size-base);
+    color: var(--clr-slate600);
+}
+
+.aboutSubtitle {
+    font-size: var(--size-base);
+    color: var(--clr-slate400);
+}
+
+.aboutList {
+    font-size: var(--size-base);
+    color: var(--clr-slate600);
+}
+
+/* xs */
+@media (min-width: 475px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .aboutContent {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .aboutTitle {
+        font-size: var(--size-2xl);
+    }
+    
+    .aboutDescription {
+        /* max-width: 60vw; */
+        font-size: var(--size-sm);
+    }
+    
+    .aboutHr {
+        border-color: var(--clr-slate800) ;
+    }
+    
+    .aboutSubtitle {
+        font-size: var(--size-sm);
+    }
+    
+    .aboutUlContainer {
+        display: flex;
+    }
+    
+    .aboutUl {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        list-style-type: "\1F44D";
+        padding-left: 1em;
+        flex: 1;
+    }
+    
+    .aboutList {
+        font-size: var(--size-sm);
+    }
+    
+    .aboutList::before {
+        content: "";
+        margin-left: 0.5em ;
+    }
+}
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+@media (min-width: 1024px) {
+    .about {
+        flex-direction: row ;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .aboutTitle {
+        font-size: var(--size-4xl);
+    }
+    
+    .aboutDescription {
+        font-size: var(--size-lg);
+    }
+    
+    .aboutSubtitle {
+        font-size: var(--size-lg);
+    }
+        
+    .aboutList {
+        font-size: var(--size-lg);
+    }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+    .aboutContent {
+        gap: 2rem;
+    }
+
+    .aboutTitle {
+        font-size: var(--size-5xl);
+    }
+    
+    .aboutDescription {
+        font-size: var(--size-xlg);
+    }
+    
+    .aboutSubtitle {
+        font-size: var(--size-xlg);
+    }
+        
+    .aboutList {
+        font-size: var(--size-xlg);
+    }
+}
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
